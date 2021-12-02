@@ -58,3 +58,83 @@
     border-radius: 100%;
     border: 2px solid #FFFFFF;
 }
+
+@media (max-width: 800px) {
+    .nameUserShare{
+        font-size: 20px;
+    }
+    .timeShare{
+        color: #C4C4C4;
+        margin-left: 5px;
+    }
+    .detailsUser{
+        color: #2BC26B;
+    }
+    .imgUser2{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border:1px solid black;
+        margin-right: 8px;
+    }
+    .encabezado{
+        height: 50px;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+    nav ul li{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        padding: 4px;
+        border: 1px solid gray;
+    }
+    nav ul li span{
+        display:none;
+    }
+    .feed{
+        position: absolute;
+        top: 92px;
+    }
+    .publicacion{
+        display: flex;
+        padding: 8px;
+    }
+    .publicacion2{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+    .spaceText{
+        display:flex;
+        justify-content: end;
+        align-items: center;
+        background-color: gray;
+        width: 340px;
+        height: 50px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    i {
+        font-size: 22px;
+        margin: 8px;
+    }
+    .profile{
+        width:70%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .textArea{
+        width: 80%;
+        margin-top: 8px;
+        margin-left: 42px;
+    }
+  }
