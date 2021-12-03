@@ -9,7 +9,8 @@ body {
 	background: linear-gradient(-45deg, #23a057, #37f084);
 	background-size: 200% 200%;
 	animation: gradientBackground 15s infinite;
-    
+    font-family: 'Roboto';
+    font-size: 13.4863px;
 }
 
 @keyframes gradientBackground {
@@ -166,14 +167,26 @@ body {
     .login{
         background-color: #f4f4f4;
         padding: 0%;
-        width: 357px;
+        width: 352px;
         height: 432px;
         position: absolute; z-index:1;/*El valor de z-index indica la posición de profundidad (capa) de u objeto en la página. Los elementos con valores positivos son apilados encima de uno con valores negativos, menores, o no especificados.*/
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        box-shadow: 0px 8px 2.99696px rgba(0, 0, 0, 0.25);
     }
 
+    .login2{
+        background-color: #f4f4f4;
+        padding: 0%;
+        width: 352px;
+        height: 505px;
+        position: absolute; z-index:1;/*El valor de z-index indica la posición de profundidad (capa) de u objeto en la página. Los elementos con valores positivos son apilados encima de uno con valores negativos, menores, o no especificados.*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0px 8px 2.99696px rgba(0, 0, 0, 0.25);
+    }
     .header-form{
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
         text-align: center;  
@@ -185,17 +198,24 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
     }
+    .header-form h1{
+        font-family:'Baloo Chettan' !important;
+        font-size: 32px;
+    
+    }
 
     .form-group{
         position: relative;
         left: 39px;
-     
         display: flex;
         flex-wrap: wrap;
         font-size: 20px;
         text-align: left; 
-        width: 275px;  
-        margin-top: 38px;
+        width: 275px;
+        height: 42px; 
+        margin-top: 30px;
+        color: #192A56;
+        
     }
 
     .form-group input{
@@ -205,14 +225,19 @@ body {
     }
 
     .form-group i{
-       
+        font-size: 15px;
         background: #C4C4C4;
         color: white;
-     
+        width: 25px;
+        max-height: 25px;   
+        text-align:center;
+        padding-top: 5px;
     }
     .form-group label{
         width: 100%;
         text-align: left;
+        font-size: 13.4863px !important;
+
     }
 
     .password{
@@ -227,16 +252,21 @@ body {
     .header-form h5 {
         display: contents;
     }
+
+    .info{
+        color: red;
+        font-size: 10px !important;
+        text-align: right;
+    }
     .footer-form{
         text-align: center;  
         width: 100%;
-        padding-top: 60px;
-        padding-bottom: 15px;
+        padding-top: 55px;
         color: #192A56;  
     }
     .footer-form p {
-        padding-top: 20px;
-        padding-bottom: 15px;
+        padding-top: 15px;
+      
     }
     .footer-form a{
         text-decoration: none;
@@ -244,10 +274,11 @@ body {
         color: #AF1281;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         cursor:pointer;
+        padding-bottom: 95px;
     }
     .btn-submit{
-        height: 50px;
-        width: 90%;
+        height: 48px;
+        width: 275px;;
         background: #AF1281;
         box-shadow: 0px 2.99696px 2.99696px rgba(0, 0, 0, 0.25);
         outline: none;
@@ -255,6 +286,7 @@ body {
         color: #fff;
         font-size: 1rem;
         font-weight: bolder;
+        font-size: 20px !important;
         cursor:pointer;
     }
     .icon{

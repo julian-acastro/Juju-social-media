@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="css/styleLogin.css">
     <link href='https://fonts.googleapis.com/css?family=Baloo Chettan' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <title>Juju | Log In</title>
+    <title>Juju | Sing Up</title>
 </head>
 <body>
   
-    <form action="home.html" class="login">
+    <form action="home.html" class="login2">
         <div class="header-form">
             <h1>Juju</h1>
-            <h5>Bienvenido a nuestra comunidad mascotera!</h5>
+            <h5>Unete a nuestra comunidad en pocos segundos!</h5>
         </div>
-
         <div class="form-group">
             <label for="">Tu direccion de mail</label>     
             <i class="fas fa-at"></i>
@@ -25,12 +24,17 @@
         <div class="form-group">
             <label for="">Tu contraseña <span class="info"> 8 caracteres minimo</span></label>
             <i class="fas fa-lock"></i>
-            <input type="password" pattern=".{8,}"  class="password" name="password" placeholder=""> 
+            <input type="password" pattern=".{8,}"  class="password" name="password"> 
+        </div>
+        <div class="form-group">
+            <label for="">Confirma tu contraseña</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" pattern=".{8,}"  class="password" name="password"> 
         </div>
 
         <div class="footer-form">
-            <button class="btn-submit">Entrar</button>
-            <p>¿Aun no tienes cuenta? <a href="singup.html">Crear cuenta</a></p>
+            <button class="btn-submit">Crear cuenta</button>
+            <p>¿Aun no tienes cuenta? <a href="login.html">Iniciar sesion</a></p>
         </div>
     </form>
 
