@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.containerPage{
+body{
     width: 100%;
     display:flex;
     justify-content: center;
@@ -10,56 +10,62 @@
 .container{
     width: 1440px;
 }
-.encabezado{
-    width: 100%;
-    height: 70px;
+header{
+    height: 50px;
+    display: flex;
+    position: fixed;
     background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.logo{
-    height: 70px;
-    padding-bottom: 17px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 48.6076px;
-    color: #FFFFFF;
-}
-.busqueda{
-    border:none;
-    border-radius: 8px;
-    height: 34px;
-    width: 228px;
-    margin-top:18px;
-}
-.usuario{
-    display: flex;
-    flex-direction: row;
-
-    height: 70px;
     align-items: center;
-    padding-right: 33px;
-    border-right: 1px solid white;
+    justify-content:  stretch;
 }
-.nameUser{
-    width: 80px;
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    line-height: 23px;
-    color: #FFFFFF;
-}
-.imgUser{
-    width: 58px;
-    height: 58px;
-    margin-left: 18px;
-    border-radius: 100%;
-    border: 2px solid #FFFFFF;
-}
-
 @media (max-width: 800px) {
+    header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content:  stretch;
+        position: fixed;
+        z-index: 30;
+        background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
+    }
+    .headerOptions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        flex-grow: 1;
+    }
+    .desplegable{
+        height: 100vh;
+        width: 100vw;
+        left: -100vw;
+        position: absolute;
+        z-index: 36;
+        background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
+    }
+    #btn-menu{
+        display: none;
+    }
+    #btn-menu:checked ~ .desplegable {
+        left: 0;
+    }
+    .desplegable ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .desplegable ul li{
+        border-bottom: 1px white solid;
+        padding: 8px;
+        margin-left: 16px;
+    }
+    .busquedaCont{
+        display: none;
+    }
+    .usuario{
+        display: none;
+    }
     .nameUserShare{
         font-size: 20px;
     }
@@ -86,7 +92,7 @@
         position: fixed;
         top:49px;
         background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
-        z-index: 30;
+        z-index: 15;
         width: 100%;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
@@ -182,62 +188,3 @@
         justify-content: end;
     }
   }
-  .publicacion2{
-    margin-top: 8px;
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 8px;
-    border: 1px solid #C4C4C4;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-.profile{
-    width:70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-}
-.textArea{
-    width: 80%;
-    margin-top: 8px;
-    margin-left: 42px;
-}
-.publicacion2 section{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.galeria{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.galeria img{
-    width: 33%!important;
-}
-.publicacion2 section img{
-    width: 100%;
-    margin:2px;
-}
-.reacciones{
-    display:flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: end;
-}i {
-    font-size: 22px;
-    margin: 8px;
-}
-.nameUserShare{
-    font-size: 20px;
-}
-.timeShare{
-    color: #C4C4C4;
-    margin-left: 5px;
-}
-.detailsUser{
-    color: #2BC26B;
-}
