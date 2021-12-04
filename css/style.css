@@ -78,53 +78,71 @@
         margin-right: 8px;
     }
     .encabezado{
+        position: fixed;
+        z-index: 30;
         height: 50px;
     }
     nav{
         position: fixed;
+        top:49px;
+        background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
+        z-index: 30;
         width: 100%;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
     nav ul{
         display: flex;
         list-style: none;
     }
     nav ul li{
+        color: white;
         width: 20%;
         display: flex;
         justify-content: center;
         font-size: 32px;
         padding: 4px;
-        border: 1px solid gray;
     }
     nav ul li span{
         display:none;
     }
+    .select{
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+        color: #AF1281;
+        border-bottom: 5px solid #AF1281;
+    }
     .feed{
+        width: 100%;
         position: absolute;
         top: 92px;
     }
     .publicacion{
+        width: 100%;
+        margin-top: 8px;
         display: flex;
-        padding: 8px;
-    }
-    .publicacion2{
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        padding: 8px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
+   
     .spaceText{
         display:flex;
-        justify-content: end;
+        justify-content: space-around;
         align-items: center;
-        background-color: gray;
-        width: 340px;
-        height: 50px;
-        margin-left: 8px;
-        margin-right: 8px;
+        background-color: #F2F0F0;
+        width: 100%;
     }
     i {
         font-size: 22px;
         margin: 8px;
+    }
+     .publicacion2{
+        margin-top: 8px;
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 8px;
+        border: 1px solid #C4C4C4;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
     .profile{
         width:70%;
@@ -137,4 +155,89 @@
         margin-top: 8px;
         margin-left: 42px;
     }
+    .publicacion2 section{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .galeria{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .galeria img{
+        width: 32%!important;
+    }
+    .publicacion2 section img{
+        width: 100%;
+        margin:2px;
+    }
+    .reacciones{
+        display:flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: end;
+    }
   }
+  .publicacion2{
+    margin-top: 8px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.profile{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.textArea{
+    width: 80%;
+    margin-top: 8px;
+    margin-left: 42px;
+}
+.publicacion2 section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.galeria img{
+    width: 33%!important;
+}
+.publicacion2 section img{
+    width: 100%;
+    margin:2px;
+}
+.reacciones{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+}i {
+    font-size: 22px;
+    margin: 8px;
+}
+.nameUserShare{
+    font-size: 20px;
+}
+.timeShare{
+    color: #C4C4C4;
+    margin-left: 5px;
+}
+.detailsUser{
+    color: #2BC26B;
+}
