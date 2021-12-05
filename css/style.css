@@ -12,6 +12,7 @@ i {
         width: 100vw;
         display:flex;
         justify-content: center;
+        font-family: 'Roboto';
     }
     .container{
         border: 1px solid ;
@@ -311,15 +312,22 @@ i {
     }
     .galeria img{
         width: 32%!important;
+      
     }
     .publicacion2 section img{
         width: 100%;
         margin:2px;
+     
     }
     .reacciones{
         display:flex;
         width: 100%;
         flex-direction: row;
         justify-content: end;
+    }
+    p{
+        font-family: 'Roboto';
+        margin-top: 10px;
+        margin-right: 10px;
     }
   }
