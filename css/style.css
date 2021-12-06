@@ -33,11 +33,40 @@ i {
         align-items: center;
         background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
     }
+    header span{
+        font-family:'Baloo Chettan' !important;
+        font-size: 32px;
+        text-align: center;
+        color: white; 
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .usuario{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .usuario span{
+        font-family: 'Roboto' !important;
+        font-size: 20px;
+        margin-left: 10px !important;
+    }
+    .busqueda{
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        height: 30px;
+        width: 200px;
+    }
     .menu{
         display: none;
     }
     .fa-search{
         display: none;
+        color: white;
+        
     }
     .headerOptions{
         display: flex;
@@ -62,6 +91,10 @@ i {
 
     nav ul li span{
         margin-left: 5px;
+    }
+    .select{
+        color: #AF1281;
+        border-bottom: 5px solid #AF1281;
     }
     .recomendaciones{
         display: block;
@@ -178,6 +211,29 @@ i {
         width: 100%;
         flex-direction: row;
         justify-content: end;
+        margin-top: 5px;
+    }
+    .reacciones p{
+            font-family: 'Roboto';
+            margin-top: 10px;
+            margin-right: 10px;
+    }
+    .profile{
+        display: inline;
+        margin-left: 10px;
+        
+    }
+
+    .fa-ellipsis-v:before{
+        margin-left: 110px;
+        
+    }
+    .timeShare{
+        color: rgb(197, 194, 194);
+        margin-left: 5px;
+    }
+    .detailsUser{
+        color: #2BC26B;
     }
 } 
 @media (max-width: 768px) {/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 768 píxeles.*/
@@ -248,7 +304,6 @@ i {
         background-color: #AF1281;
     
     }
-
     .busqueda{
         display: none;
     }
@@ -349,7 +404,6 @@ i {
         color:#AF1281; 
     }
      .publicacion2{
-        margin-top: 8px;
         width:100%;
         display: flex;
         flex-wrap: wrap;
