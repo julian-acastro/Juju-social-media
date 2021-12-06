@@ -47,12 +47,12 @@ i {
         flex-grow: 1;
     }  
     nav{
-        margin: 23px; 
         width: 292px;
-        border-bottom: #C4C4C4 1px solid;
     }
     nav ul{
         list-style: none;
+        border-bottom: #C4C4C4 1px solid;
+        margin: 23px; 
     }
     nav ul li{
 
@@ -61,8 +61,30 @@ i {
     }
 
     nav ul li span{
-
         margin-left: 5px;
+    }
+    .recomendaciones{
+        margin: 23px; 
+
+    }
+    .optionRecom{
+        display:flex;
+        align-items: center;  
+        justify-content: space-around;
+    }
+    .optionRecom span{
+        display: flex;
+        align-items: center;
+    }
+
+    .optionRecom input{
+        width: 84px;
+        height: 24px;
+        border: none;
+        background: #AF1281;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        color: white;
     }
     .feed{
         border: red 1px solid;
@@ -81,7 +103,27 @@ i {
         flex-wrap: wrap;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
-   
+    .placeText{
+        width: 100%;
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   .publicacion input{
+        background: white;
+        border-radius: 20px;
+        border-color: #F2F0F0;
+        margin-left:8px;
+        width: 85%;
+        height: 30px;
+    }
+    .imgUser2{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
     .spaceText{
         display:flex;
         justify-content: space-around;
@@ -138,6 +180,7 @@ i {
     }
 } 
 @media (max-width: 768px) {/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 768 píxeles.*/
+    
     header{
         width: 100%;
         height: 50px;
@@ -183,6 +226,7 @@ i {
         left: 0;
     }
     .desplegable ul{
+        margin-top:23px;
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -242,6 +286,7 @@ i {
         z-index: 15;
         width: 100%;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        margin:0px;
     }
     nav ul{
         display: flex;
@@ -267,6 +312,7 @@ i {
         width: 100%;
         position: absolute;
         top: 92px;
+        justify-content: stretch;
     }
     .publicacion{
         width: 100%;
@@ -302,6 +348,7 @@ i {
         width:100%;
         display: flex;
         flex-wrap: wrap;
+        padding: 0px;
         padding-top: 8px;
         border: 1px solid #C4C4C4;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
