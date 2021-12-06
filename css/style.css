@@ -64,6 +64,7 @@ i {
         margin-left: 5px;
     }
     .recomendaciones{
+        display: block;
         margin: 23px; 
 
     }
@@ -291,6 +292,7 @@ i {
     nav ul{
         display: flex;
         list-style: none;
+        margin:0px;
     }
     nav ul li{
         color: white;
@@ -302,6 +304,9 @@ i {
        
     }
     nav ul li span{
+        display:none;
+    }
+    .recomendaciones{
         display:none;
     }
     .select{
