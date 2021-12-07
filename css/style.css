@@ -292,7 +292,7 @@ i {
     #like:hover {
         color: #AF1281;
       }
- .fa-heart{
+    .fa-heart{
     color: #AF1281;
  }
     .profile{
@@ -302,8 +302,7 @@ i {
     }
 
     .fa-ellipsis-v:before{
-        margin-left: 110px;
-        
+        margin-left: 110px;   
     }
     .timeShare{
         color: rgb(197, 194, 194);
@@ -522,7 +521,9 @@ i {
         width: 100%;
         color: #192A56;    
     }
-   
+    .fa-ellipsis-v:before{
+        margin-left: 40px;   
+    }
     .fa-paper-plane{
         color:#AF1281; 
     }
