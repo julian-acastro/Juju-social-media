@@ -6,9 +6,14 @@ const like = document.getElementById("like");
 
 function myFunction(x) {
     x.classList.toggle("fas");    
-    var elemento = document.getElementById("numero");
+    var elemento = document.querySelector(".numero");
     var num = parseInt(elemento.innerHTML);
-    num+=1;
+    if(x.classList.contains("fas")){
+        num+=1;
+    }
+    else{
+        num-=1;
+    }
     elemento.innerHTML = num
   }
 

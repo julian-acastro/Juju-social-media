@@ -356,6 +356,10 @@ i {
     #chatCheck:checked ~ .chat{
         bottom: 0px;
     }
+    .calendario{
+        border:solid red;
+        width: 300px;      
+    }
 } 
 @media (max-width: 768px) {/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 768 píxeles.*/
     
