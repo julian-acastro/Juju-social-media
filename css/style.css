@@ -10,6 +10,7 @@ i {
     margin: 8px;
 }
 @media (max-width: 2000px){/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 2000 píxeles.*/
+    
     .loader {
         display: block;
         border: 16px solid #f3f3f3; 
@@ -55,15 +56,18 @@ i {
         position: sticky;
         top: 0px;
         z-index: 1;
-        width:100%!important;
-        height: 50px;
+        width:100% !important;
+        height: 70px;
         display: flex;
         align-items: center;
         background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
     }
     header span{
-        font-family:'Baloo Chettan' !important;
-        font-size: 32px;
+        font-family:'Baloo Chettan' !important;   
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48.6076px;
+        line-height: 70px;
         text-align: center;
         color: white; 
         margin-left: 15px;
@@ -73,6 +77,7 @@ i {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-right: 15px;
     }
     .usuario span{
         font-family: 'Roboto' !important;
@@ -80,21 +85,31 @@ i {
         margin-left: 10px !important;
     }
     .busqueda{
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-left-radius: 50px;
-        height: 30px;
-        width: 200px;
+        height: 34px;
+      
+        background: #FEFEFE;
+        border-radius: 12px;
+        margin-bottom:6px ;
+        width: 228px;
+        height: 25px;
     }
     .menu{
         display: none;
     }
     .fa-search{
         display: none;
+        color: white;  
+    }
+    .fa-user-cog{
         color: white;
-        
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    hr{
+        height: 0px;
+        width: 85%;
+        margin-left: 18px;
+        color: rgb(236, 235, 235);
     }
     .headerOptions{
         display: flex;
@@ -130,7 +145,20 @@ i {
         display: block;
         margin: 23px; 
         text-align: center;
+   
     }
+    .recomendaciones h4{
+        color:rgb(197, 194, 194);
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+   .publi{
+    display: block;
+    margin: 23px; 
+    text-align: center;
+
+   }
+
     .optionRecom{
         margin-top:11px;
         margin-bottom: 11px;
@@ -157,7 +185,6 @@ i {
         color: white;
     }
     .feed{
-        border: red 1px solid;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -184,13 +211,13 @@ i {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    
    .publicacion input{
-        background: white;
-        border-radius: 20px;
-        border-color: #F2F0F0;
-        margin-left:8px;
-        width: 85%;
-        height: 30px;
+    background: white;
+    border-radius: 20px;
+    margin-left:8px;
+    width: 85%;
+    height: 30px;
     }
     .imgUser2{
         width: 40px;
@@ -224,7 +251,9 @@ i {
         margin-top: 8px;
         margin-left: 42px;
     }
-   
+    .fa-paper-plane{
+        color:#AF1281; 
+    }
     .publicacion2 section{
         position: relative;
         display: flex;
@@ -257,6 +286,15 @@ i {
             margin-top: 10px;
             margin-right: 10px;
     }
+    #like{
+        cursor: pointer;
+    }
+    #like:hover {
+        color: #AF1281;
+      }
+ .fa-heart{
+    color: #AF1281;
+ }
     .profile{
         display: inline;
         margin-left: 10px;
@@ -337,7 +375,7 @@ i {
         font-size: 32px;
         text-align: center;
         color: white; 
-        margin-left: 10px;
+        margin-left: 42px;
     }
     .headerOptions{
         display: flex;
@@ -485,7 +523,7 @@ i {
         color: #192A56;    
     }
    
-    .far{
+    .fa-paper-plane{
         color:#AF1281; 
     }
      .publicacion2{
