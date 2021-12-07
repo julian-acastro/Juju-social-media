@@ -95,7 +95,7 @@ i {
         display: flex;
         flex-direction: column;
         justify-content: right;
-        background: #2BC26B 80.87%;
+        background:#f2f0f0 80.87%;
 
     }
     .desplegable li{
@@ -206,9 +206,7 @@ i {
         border-radius: 4px;
         color: white;
     }
-    .optionRecom:hover {
-        background-color: green;
-    }
+   
     .feedGeneral{
 
         display: flex;
@@ -294,7 +292,51 @@ i {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+    .comentario{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .comentario details ol {
+        list-style: none;
+    }
+    .comentario details ol li{
+        padding-top: 8px;
+        padding-bottom: 16px;
+        border-bottom: #F2F0F0 1px solid;
+    }
+    .miComentario{
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        padding: 8px;
+        border-bottom: #F2F0F0 1px solid;
+    }
+    .miComentario input{
+        background: white;
+        border-radius: 20px;
+        margin-left:8px;
+        min-width:60%;
+        height: 30px;
+    }
+    .detallesComen{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .detallesComen .profile{
+        min-width: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .detallesComen .profile .detailsUser{
+        width: 100%;
+    }
+    .detallesComen .profile span{
+        min-width: max-content;
+    }
     .galeria{
         width: 100%;
         display: flex;
@@ -394,8 +436,12 @@ i {
         display: block;
     }
     .calendario{
-        border:solid red;
         width: 300px;      
+        margin-top: 10px;
+        border: rgb(233, 231, 231) 1px solid;
+    }
+    input[type="button" i]:hover{
+        background-color: #27AE60;
     }
 } 
 @media (max-width: 768px) {/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 768 píxeles.*/
@@ -506,7 +552,6 @@ i {
         border:1px solid #C4C4C4 ;
         margin-right: 8px;
         margin-left: 5px;
-        margin-top: 12px;
         object-fit: cover;
     }
     .encabezado{
@@ -640,6 +685,14 @@ i {
         width: 100%;
         margin:2px;
      
+    }
+    .miComentario{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        padding: 8px;
+        border-bottom: #F2F0F0 1px solid;
     }
     .reacciones{
         display:flex;
