@@ -184,6 +184,9 @@ i {
         border-radius: 4px;
         color: white;
     }
+    .optionRecom:hover {
+        background-color: green;
+    }
     .feed{
         display: flex;
         flex-direction: column;
@@ -192,8 +195,7 @@ i {
         position:relative;
         bottom: 0px;
         top:0px;
-        left: 400px;;
-        overflow-y: scroll;
+        left: 400px;
     }
     .publicacion{
         width: 100%;
