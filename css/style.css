@@ -84,6 +84,30 @@ i {
         font-size: 20px;
         margin-left: 10px !important;
     }
+    .usuario input{
+        display: none;
+    }
+    .desplegable{
+        position: absolute;
+        top:70px;
+        right: 200%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        background: #2BC26B 80.87%;
+
+    }
+    .desplegable li{
+        padding: 8px;
+    }
+    .desplegable li:hover{
+        background:rgb(0, 0, 0, 0.2);
+        padding: 8px;
+    }
+    #dropDown:checked ~ .desplegable{
+        right: 0px;
+    }
     .busqueda{
         background: #FEFEFE;
         border-radius: 12px;
@@ -366,6 +390,9 @@ i {
     #chatCheck:checked ~ .chat{
         bottom: 0px;
     }
+    .calendar{
+        display: block;
+    }
     .calendario{
         border:solid red;
         width: 300px;      
@@ -520,12 +547,26 @@ i {
         color: #AF1281;
         border-bottom: 5px solid #AF1281;
     }
+
+    .feedGeneral{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        position:relative;
+        bottom: 0px;
+        top:0px;
+        left: 0px;
+    }
     .feed{
         left: 0px;
         width: 100%;
         position: absolute;
         top: 92px;
         justify-content: stretch;
+    }
+    .calendar{
+        display: none;
     }
     .publicacion{
         width: 100%;
