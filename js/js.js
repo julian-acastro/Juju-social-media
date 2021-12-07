@@ -4,12 +4,11 @@ const header = document.querySelector(".header");
 const like = document.getElementById("like");
 
 
+
 function myChat() {   
   
     document.getElementById("chatt").classList.toggle("show");
   }
-  
-
   window.onclick = function(event){
     if(!event.target.matches('.chat3')) {//cierra el submenu si se clickea afuera
         var dropdowns = document.getElementsByClassName("chatList");
@@ -24,9 +23,9 @@ function myChat() {
       }
     }
 }
-function myFunction(x) {
-    x.classList.toggle("fas");    
-    var elemento = document.querySelector(".numero");
+function myFunction(x , numerito) {
+    x.classList.toggle("fas"); 
+    var elemento = document.getElementById(numerito);
     var num = parseInt(elemento.innerHTML);
     if(x.classList.contains("fas")){
         num+=1;
