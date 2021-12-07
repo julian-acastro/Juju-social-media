@@ -4,9 +4,11 @@ const header = document.querySelector(".header");
 const like = document.getElementById("like");
 
 
-function myFunction(x) {
-    x.classList.toggle("fas");    
-    var elemento = document.querySelector(".numero");
+
+function myFunction(x , numerito) {
+    x.classList.toggle("fas"); 
+    console.log(numerito);
+    var elemento = document.getElementById(numerito);
     var num = parseInt(elemento.innerHTML);
     if(x.classList.contains("fas")){
         num+=1;
