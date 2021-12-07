@@ -102,19 +102,22 @@ details{
 }
 details summary{
     color: white;
-    background-color: #AF1281;
+    background-color: #31B669;
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+ul{
+    background-color: #f0f2f2;
+}
 ol{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
-    background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
+    background-color: #f0f2f2;
     padding: 8px;
 }
 li{ 
@@ -141,6 +144,10 @@ li input{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     color: white;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .resultados{
     width:40%;
@@ -178,10 +185,16 @@ li input{
 h1{
     text-align: center;
     width: 100%;
+    color:rgb(180, 179, 179);;
+    font-weight: normal;
+    padding-bottom: 15px;
 }
 h2{
     text-align: center;
     width: 100%;
+    color:rgb(180, 179, 179);;
+    font-weight: normal;
+    padding-bottom: 15px;
 }
 h3{
     text-align: center;
