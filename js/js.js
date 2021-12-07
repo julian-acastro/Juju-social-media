@@ -2,11 +2,14 @@ const loader = document.querySelector(".loader");
 const container = document.querySelector(".container");
 const header = document.querySelector(".header");
 const like = document.getElementById("like");
-const count = document.getElementsByClassName("cantLike");
+
 
 function myFunction(x) {
     x.classList.toggle("fas");    
-    console.log(cantLike)
+    var elemento = document.getElementById("numero");
+    var num = parseInt(elemento.innerHTML);
+    num+=1;
+    elemento.innerHTML = num
   }
 
 function iniciar(){

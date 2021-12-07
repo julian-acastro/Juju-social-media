@@ -361,6 +361,23 @@ i {
 } 
 @media (max-width: 768px) {/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 768 píxeles.*/
     
+    .loader {
+        display: block;
+        border: 16px solid #f3f3f3; 
+        border-bottom: 16px solid #AF1281;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        position: fixed;
+        left: 38%;
+        top: 20%;
+        z-index: 1;
+        transition: all 1000ms ease;
+      }
+
     header{
         width: 100%;
         height: 50px;
