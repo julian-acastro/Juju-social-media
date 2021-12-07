@@ -2,10 +2,11 @@ const loader = document.querySelector(".loader");
 const container = document.querySelector(".container");
 const header = document.querySelector(".header");
 const like = document.getElementById("like");
-const cantLike = document.querySelector("cantLike");
+const count = document.getElementsByClassName("cantLike");
 
 function myFunction(x) {
     x.classList.toggle("fas");    
+    console.log(cantLike)
   }
 
 function iniciar(){
