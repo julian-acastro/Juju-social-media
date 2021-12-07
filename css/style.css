@@ -308,6 +308,7 @@ i {
         margin-left: 42px;
     }
     .fa-paper-plane{
+        border-radius: 100%;
         color:#AF1281; 
     }
     .publicacion2 section{
@@ -479,6 +480,15 @@ i {
         font-weight: normal;
         margin-bottom: 15px;
 
+    }
+    .publicidad{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    .publicidad-banner{
+        width: 320px;  
+        margin-top: 30px;    
     }
     .fecha1{
 
