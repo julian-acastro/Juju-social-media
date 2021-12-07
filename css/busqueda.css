@@ -1,0 +1,129 @@
+*{
+    margin: 0pt;
+    padding: 0pt;
+}
+body{
+    width: 99vw;
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+ 
+.container{
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width:100% !important;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
+}
+header span{
+    font-family:'Baloo Chettan' !important;   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48.6076px;
+    line-height: 70px;
+    text-align: center;
+    color: white; 
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+.usuario span{
+    font-family: 'Roboto' !important;
+    font-size: 20px;
+    margin-left: 10px !important;
+}
+.busqueda{
+    height: 34px;
+  
+    background: #FEFEFE;
+    border-radius: 12px;
+    margin-bottom:6px ;
+    width: 228px;
+    height: 25px;
+}
+.menu{
+    display: none;
+}
+.fa-search{
+    display: none;
+    color: white;  
+}
+.fa-user-cog{
+    color: white;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+hr{
+    height: 0px;
+    width: 85%;
+    margin-left: 18px;
+    color: rgb(236, 235, 235);
+}
+.headerOptions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+}
+.imgUser2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.barraDeBusqueda{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    border: 1px red solid;
+}
+details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: baseline;
+    border-bottom: 1px grey solid;
+}
+details summary{
+    color: white;
+    background-color: #AF1281;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ol{
+    background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
+    padding: 8px;
+}
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+li input{
+    background: #FEFEFE;
+    border-radius: 12px;
+    margin-bottom:6px ;
+    width: 100%;
+    height: 25px;
+
+}
