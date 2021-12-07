@@ -182,10 +182,7 @@ i {
         border-radius: 4px;
         color: white;
     }
-    .optionRecom:hover {
-        background-color: rgb(0, 0, 0, 0.3);
-
-    }
+   
     .feedGeneral{
 
         display: flex;
@@ -372,7 +369,9 @@ i {
         margin-top: 10px;
         border: rgb(233, 231, 231) 1px solid;
     }
-   
+    input[type="button" i]:hover{
+        background-color: #27AE60;
+    }
 } 
 @media (max-width: 768px) {/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 768 píxeles.*/
     
