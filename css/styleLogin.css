@@ -118,6 +118,13 @@ body {
     font-size: 15px !important;
 
 }
+.btn-submit:hover{
+    background-color:#31B669;
+}
+.footer-form a:hover{
+    color: #31B669;
+}
+
 .footer-form{
     text-align: center;  
     width: 100%;
