@@ -84,6 +84,30 @@ i {
         font-size: 20px;
         margin-left: 10px !important;
     }
+    .usuario input{
+        display: none;
+    }
+    .desplegable{
+        position: absolute;
+        top:70px;
+        right: 200%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        background:#f2f0f0 80.87%;
+
+    }
+    .desplegable li{
+        padding: 8px;
+    }
+    .desplegable li:hover{
+        background:rgb(0, 0, 0, 0.2);
+        padding: 8px;
+    }
+    #dropDown:checked ~ .desplegable{
+        right: 0px;
+    }
     .busqueda{
         background: #FEFEFE;
         border-radius: 12px;
@@ -278,7 +302,51 @@ i {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+    .comentario{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .comentario details ol {
+        list-style: none;
+    }
+    .comentario details ol li{
+        padding-top: 8px;
+        padding-bottom: 16px;
+        border-bottom: #F2F0F0 1px solid;
+    }
+    .miComentario{
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        padding: 8px;
+        border-bottom: #F2F0F0 1px solid;
+    }
+    .miComentario input{
+        background: white;
+        border-radius: 20px;
+        margin-left:8px;
+        min-width:60%;
+        height: 30px;
+    }
+    .detallesComen{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .detallesComen .profile{
+        min-width: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .detallesComen .profile .detailsUser{
+        width: 100%;
+    }
+    .detallesComen .profile span{
+        min-width: max-content;
+    }
     .galeria{
         width: 100%;
         display: flex;
@@ -373,6 +441,9 @@ i {
     }
     #chatCheck:checked ~ .chat{
         bottom: 0px;
+    }
+    .calendar{
+        display: block;
     }
     .calendario{
         width: 320px;      
@@ -516,7 +587,6 @@ i {
         border:1px solid #C4C4C4 ;
         margin-right: 8px;
         margin-left: 5px;
-        margin-top: 12px;
         object-fit: cover;
     }
     .encabezado{
@@ -557,12 +627,26 @@ i {
         color: #AF1281;
         border-bottom: 5px solid #AF1281;
     }
+
+    .feedGeneral{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        position:relative;
+        bottom: 0px;
+        top:0px;
+        left: 0px;
+    }
     .feed{
         left: 0px;
         width: 100%;
         position: absolute;
         top: 92px;
         justify-content: stretch;
+    }
+    .calendar{
+        display: none;
     }
     .publicacion{
         width: 100%;
@@ -636,6 +720,14 @@ i {
         width: 100%;
         margin:2px;
      
+    }
+    .miComentario{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        padding: 8px;
+        border-bottom: #F2F0F0 1px solid;
     }
     .reacciones{
         display:flex;
