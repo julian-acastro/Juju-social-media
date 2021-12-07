@@ -5,9 +5,26 @@ const like = document.getElementById("like");
 
 
 
+function myChat() {   
+  
+    document.getElementById("chatt").classList.toggle("show");
+  }
+  window.onclick = function(event){
+    if(!event.target.matches('.chat3')) {//cierra el submenu si se clickea afuera
+        var dropdowns = document.getElementsByClassName("chatList");
+        var i;
+        for (i = 0;  i < dropdowns.length; i++) {
+          var openChat = dropdowns[i];
+          //Busca dentro de drop-content los elementos con la clase show
+        if (openChat.classList.contains('show')){
+
+          openChat.classList.remove('show');
+        }
+      }
+    }
+}
 function myFunction(x , numerito) {
     x.classList.toggle("fas"); 
-    console.log(numerito);
     var elemento = document.getElementById(numerito);
     var num = parseInt(elemento.innerHTML);
     if(x.classList.contains("fas")){
