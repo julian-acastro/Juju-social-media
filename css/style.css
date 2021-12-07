@@ -313,6 +313,7 @@ i {
         border-bottom: #F2F0F0 1px solid;
     }
     .miComentario input{
+        padding-left: 12px;
         background: white;
         border-radius: 20px;
         margin-left:8px;
@@ -498,6 +499,7 @@ i {
         width: 100vw;
         left: -100vw;
         position: absolute;
+        top: 50px;
         z-index: 36;
         background: linear-gradient(90deg, #27AE60 43.49%, #2BC26B 80.87%);
     }
@@ -622,12 +624,13 @@ i {
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     }
    .publicacion input{
-    background: white;
-    border-radius: 20px;
-    border-color: #F2F0F0;
-    width: 85%;
-    margin-top: 12px;
-    height: 30px;
+        padding-left: 8px;
+        background: white;
+        border-radius: 20px;
+        border-color: #F2F0F0;
+        width: 75%;
+        margin-top: 12px;
+        height: 30px;
    }
     .spaceText{
         display:flex;
