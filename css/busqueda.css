@@ -141,3 +141,9 @@ li input{
     border-radius: 4px;
     color: white;
 }
+.resultados{
+    width:49%;
+}
+.historial{
+    width: 20%;
+}
