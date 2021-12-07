@@ -10,12 +10,41 @@ i {
     margin: 8px;
 }
 @media (max-width: 2000px){/*Esta Media Query se ejecutará sólo cuando la anchura de la ventana del navegador sea menor de 2000 píxeles.*/
+    .loader {
+        display: block;
+        border: 16px solid #f3f3f3; 
+        border-bottom: 16px solid #AF1281;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        position: fixed;
+        left: 46%;
+        top: 40%;
+        z-index: 1;
+        transition: all 1000ms ease;
+      }
+      
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+    
+    .container{
+        display: none;
+        opacity: 0;
+    }
+   
+    
     body{
         width: 99vw;
         display:flex;
         justify-content: center;
         font-family: 'Roboto';
     }
+     
     .container{
         width: 1440px;
         display: flex;
@@ -112,6 +141,10 @@ i {
     .optionRecom span{
         display: flex;
         align-items: center;
+        margin-right: 8px;
+    }
+    .optionRecom .imgUser2{
+        margin-right: 3px;
     }
 
     .optionRecom input{
@@ -249,12 +282,20 @@ i {
         height: 620px;
     }
     .chatHead{
+        color: white;
+        font-family: 'Roboto';
+        font-size: 20px;
         width: 100%;
         height: 43px;
         background: #AF1281;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .chatHead input{
+        display: none;
     }
     .chatList span{
         display: flex;
